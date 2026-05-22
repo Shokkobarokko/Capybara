@@ -6,27 +6,47 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FCAE4D752FC0EB26002C7B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAE4D6D2FC0EB26002C7B29 /* Assets.xcassets */; };
+		FCAE4D772FC0EB26002C7B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE4D702FC0EB26002C7B29 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FC2A062E2FC076E300651EFD /* Capybara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capybara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAE4D6D2FC0EB26002C7B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAE4D6E2FC0EB26002C7B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAE4D6F2FC0EB26002C7B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FC2A06402FC076E500651EFD /* Exceptions for "Capybara" folder in "Capybara" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FC2A062D2FC076E300651EFD /* Capybara */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FC2A06302FC076E300651EFD /* Capybara */ = {
+		FCAE4D782FC0EB29002C7B29 /* Utils */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				FC2A06402FC076E500651EFD /* Exceptions for "Capybara" folder in "Capybara" target */,
-			);
-			path = Capybara;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FCAE4D792FC0EB31002C7B29 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FCAE4D7A2FC0EB3A002C7B29 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCAE4D7B2FC0EB40002C7B29 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FCAE4D7C2FC0EB48002C7B29 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCAE4D7D2FC0EB50002C7B29 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +65,7 @@
 		FC2A06252FC076E300651EFD = {
 			isa = PBXGroup;
 			children = (
-				FC2A06302FC076E300651EFD /* Capybara */,
+				FCAE4D722FC0EB26002C7B29 /* Capybara */,
 				FC2A062F2FC076E300651EFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +76,22 @@
 				FC2A062E2FC076E300651EFD /* Capybara.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FCAE4D722FC0EB26002C7B29 /* Capybara */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE4D7D2FC0EB50002C7B29 /* App */,
+				FCAE4D7C2FC0EB48002C7B29 /* Models */,
+				FCAE4D7B2FC0EB40002C7B29 /* ViewModels */,
+				FCAE4D7A2FC0EB3A002C7B29 /* Views */,
+				FCAE4D792FC0EB31002C7B29 /* Services */,
+				FCAE4D782FC0EB29002C7B29 /* Utils */,
+				FCAE4D6D2FC0EB26002C7B29 /* Assets.xcassets */,
+				FCAE4D6E2FC0EB26002C7B29 /* Info.plist */,
+				FCAE4D702FC0EB26002C7B29 /* LaunchScreen.storyboard */,
+			);
+			path = Capybara;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,7 +110,12 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FC2A06302FC076E300651EFD /* Capybara */,
+				FCAE4D782FC0EB29002C7B29 /* Utils */,
+				FCAE4D792FC0EB31002C7B29 /* Services */,
+				FCAE4D7A2FC0EB3A002C7B29 /* Views */,
+				FCAE4D7B2FC0EB40002C7B29 /* ViewModels */,
+				FCAE4D7C2FC0EB48002C7B29 /* Models */,
+				FCAE4D7D2FC0EB50002C7B29 /* App */,
 			);
 			name = Capybara;
 			packageProductDependencies = (
@@ -122,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAE4D752FC0EB26002C7B29 /* Assets.xcassets in Resources */,
+				FCAE4D772FC0EB26002C7B29 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +180,17 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		FCAE4D702FC0EB26002C7B29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCAE4D6F2FC0EB26002C7B29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FC2A06422FC076E500651EFD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -150,7 +204,6 @@
 				INFOPLIST_FILE = Capybara/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -182,7 +235,6 @@
 				INFOPLIST_FILE = Capybara/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
