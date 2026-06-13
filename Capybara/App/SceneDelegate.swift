@@ -8,9 +8,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let rootViewController = UIViewController()
-        rootViewController.view.backgroundColor = .white
-        window.rootViewController = rootViewController
+//        let rootViewController = UIViewController()
+//        rootViewController.view.backgroundColor = .white
+        let onboardingVC = OnboardingPageViewController()
+                onboardingVC.onboardingDelegate = self
+        window.rootViewController = onboardingVC
         self.window = window
         
         window.makeKeyAndVisible()
@@ -37,5 +39,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
+}
+
+extension SceneDelegate: OnboardingPageViewControllerDelegate {
+    func onboardingDidFinish() {
+        let tabBarController = MainTabBarController()
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+    }
 }
 
